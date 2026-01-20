@@ -1,0 +1,5 @@
+{
+  "name": "QuotexFlow AI Predictor",
+  "description": "A professional binary options analysis tool optimized for Quotex traders. Uses Gemini AI to detect candlestick patterns for high-probability Call/Put signals across major Forex pairs.",
+  "requestFramePermissions": []
+}
