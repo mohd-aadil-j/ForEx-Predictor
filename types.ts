@@ -24,8 +24,20 @@ export interface AIAnalysis {
   };
 }
 
+export interface HistoricalPrediction extends AIAnalysis {
+  id: string;
+  symbol: string;
+  timeframe: Timeframe;
+  timestamp: number;
+  entryPrice: number;
+  status: 'WIN' | 'LOSS' | 'PENDING';
+  actualResult?: number;
+}
+
+export type AssetCategory = 'Major' | 'Minor' | 'Exotic' | 'Crypto' | 'Commodity';
+
 export interface CurrencyPair {
   symbol: string;
   name: string;
-  category: 'Major' | 'Minor' | 'Exotic';
+  category: AssetCategory;
 }
